@@ -14,7 +14,250 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    /* Styling for Status-Pages */
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      padding-top: 10%;
+    }
+
+    .align-center {
+      text-align: center;
+    }
+
+    .container {
+      width: 50%;
+    }
+
+    h1 {
+      color: #9b59b6;
+      font-weight: 300;
+      font-size: 120px;
+      margin-bottom: 20px;
+      margin-top: 10%;
+    }
+
+    h2 {
+      color: #34495e;
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 1.25em;
+    }
+
+    .btn-saftey {
+      background-color: #fff;
+      border-color: #34495e;
+      color: #34495e;
+      margin-top: 10px;
+      margin-right: 5px;
+    }
+
+    .btn-saftey:hover {
+      background-color: #34495e;
+      border-color: #34495e;
+      color: #fff;
+    }
+
+    .btn-saftey:focus {
+      background-color: #34495e;
+      border-color: #34495e;
+      color: #fff;
+      outline: none;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #34495e;
+      border-color: #34495e;
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+
+    .btn-primary:hover {
+      background-color: #fff;
+      border-color: #34495e;
+      color: #34495e;
+    }
+
+    .btn-primary:focus {
+      color: #fff;
+      background-color: #34495e;
+      border-color: #34495e;
+      outline: none;
+    }
+
+
+    @media (max-width: 768px) {
+      .container {
+        width: 100%;
+      }
+
+      .btn-primary {
+        margin-left: 0px;
+      }
+
+      .btn-saftey: {
+        margin-right: 0px;
+      }
+    }
+
+    .modal-footer {
+      background-color: #000;
+      text-align: left;
+      padding: 0px 0px 0px 0px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .modal {
+      margin-top: 5%;
+    }
+
+    .modal-footer .col-lg-6 {
+      padding: 0px 0px 0px 0px;
+    }
+
+    .modal-footer .btn-group-lg>.btn, .btn-lg {
+      border-radius: 0px;
+    }
+
+    .modal-footer a.btn.disabled {
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 0px;
+      border-collapse: collapse;
+      ;
+    }
+
+    .modal-footer .btn-center {
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .modal-content {
+      border-radius: 10px;
+    }
+
+    .modal-header {
+      background-color: #fff;
+      color: #fff;
+      border-bottom-style: none;
+      border-radius: 10px;
+    }
+
+    .modal-title {
+      color: #fff;
+    }
+
+    .modal-body {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+
+    .modal-body .modal-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .modal-body .modal-title h1 {
+      color: #34495e;
+      font-weight: 300;
+      font-size: 35px;
+    }
+
+    .modal .disabled {
+      border-radius: 0px;
+    }
+
+    .modal-body .modal-title p {
+      color: #000;
+      font-size: 18px;
+      text-align: center;
+      font-weight: 300;
+    }
+
+    @media (max-width: 768px) {
+      .modal-footer .btn-left {
+        border-bottom-left-radius: 0px;
+      }
+
+      .page-title {
+        padding-top: 20px;
+      }
+
+      .modal-body .btn-modal {
+        width: 100%;
+        margin-top: 5px;
+      }
+
+      .page-title .btn {
+        margin-left: 0px;
+        text-align: center;
+        float: center !important;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .box {
+        margin-right: -1%;
+      }
+
+      .box .btn-stack {
+        float: center !important;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      /* This restyles the error section */
+      .main-content h2 {
+        margin-left: 10px;
+      }
+
+      .modal-footer .btn-right {
+        border-bottom-right-radius: 0px;
+      }
+
+      .modal-body {
+        padding-left: 12%;
+        padding-right: 12%;
+      }
+
+      .navbar .fa {
+        margin-right: 10px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .modal-footer .btn-left {
+        /*border-bottom-left-radius: 10px;*/
+      }
+
+      .modal-footer .btn-right {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .modal-footer .btn-right {
+        border-bottom-right-radius: 10px;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+      .modal-footer .btn-left {
+        border-bottom-left-radius: 10px;
+      }
+    }
+
+    .close {
+      color: #34495e;
+    }
+
+    .btn-round {
+      border-radius: 5px;
+    }
+
+    </style>
   </head>
   <body>
     <center>
